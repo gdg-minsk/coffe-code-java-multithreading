@@ -11,7 +11,7 @@ class CountingSemaphore(// max permits to give out
             while (usedPermits == maxCount) lock.wait()
 
             usedPermits++
-            lock.notify()
+            lock.notifyAll()
         }
     }
 
@@ -20,7 +20,7 @@ class CountingSemaphore(// max permits to give out
             while (usedPermits == 0) lock.wait()
 
             usedPermits--
-            lock.notify()
+            lock.notifyAll()
         }
     }
 }

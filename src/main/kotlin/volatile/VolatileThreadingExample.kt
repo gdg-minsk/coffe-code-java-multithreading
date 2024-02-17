@@ -2,7 +2,7 @@ package volatile
 
 import kotlin.concurrent.Volatile
 
-object DemoVolatile {
+object VolatileThreadingExample {
     // volatile doesn't imply thread-safety!
     @Volatile
     var count: Int = 0
