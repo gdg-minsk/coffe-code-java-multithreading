@@ -1,12 +1,12 @@
-package volatile
+package quiz
 
-class VolatilePuzzler {
+class Quiz8 {
     var count = 0
     var ready = false
 }
 
 fun main(args: Array<String>) {
-    val state = VolatilePuzzler()
+    val state = Quiz8()
 
     val thread1 = Thread {
         while (true) {

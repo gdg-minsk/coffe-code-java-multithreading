@@ -1,7 +1,5 @@
 package quiz
 
-import java.util.Objects
-
 class CountingSemaphoreExample(
     private val maxCount: Int // max permits to give out
 ) {

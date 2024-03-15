@@ -1,5 +1,4 @@
 import quiz.solution.State
-import java.util.Objects
 
 class State {
     var x = 0
